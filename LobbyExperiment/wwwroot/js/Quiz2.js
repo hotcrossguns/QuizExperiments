@@ -6,12 +6,12 @@ var group = document.getElementById("groupName").textContent;
 //Questions should come from view model
 const questions = [
     {
-        question: "What is 2 + 2",
+        question: "What is the capital of France?",
         options: [
-            { text: "4", correct: true },
-            { text: "22", correct: false },
-            { text: "3", correct: false },
-            { text: "5", correct: false },
+            { text: "Paris", correct: true },
+            { text: "Venice", correct: false },
+            { text: "Sydney", correct: false },
+            { text: "London", correct: false },
             ] 
     }
 ]
@@ -74,10 +74,10 @@ function sendResult() {
     });*/
     var result;
     if (optionPicked == "no option") {
-        result = `picked ${optionPicked}`;
+        result = ` picked ${optionPicked}`;
     }
     else {
-        result = `picked ${optionPicked} in ${timePicked} seconds`;
+        result = ` picked ${optionPicked} in ${timePicked} seconds`;
     }
     console.log(result);
     connection.invoke("SendResultToGroup", group, result).catch(function (err) {
