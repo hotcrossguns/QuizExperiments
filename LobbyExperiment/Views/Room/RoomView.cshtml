@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Room Page";
+}
+
+<div class="container">
+    <h1 id="groupName">@ViewData["groupName"]</h1>
+    <div class="row">&nbsp;</div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <hr />
+    </div>
+</div>
+<span>Waiting for </span> <var id="noOfPlayersNeeded">3</var> <span> more player/s...</span>
+<div class="row">
+    <div class="col-6">
+        <ul id="playerList"></ul>
+    </div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/Room.js"></script>

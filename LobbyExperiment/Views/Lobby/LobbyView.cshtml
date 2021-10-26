@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Lobby Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <!--<a class="nav-link text-dark" asp-area="" asp-controller="Room" asp-action="RoomView">Join Lobby</a>-->
+            <input type="button" id="newLobbyButton" value="Create Lobby" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <!--<a class="nav-link text-dark" asp-area="" asp-controller="Room" asp-action="RoomView">Join Lobby</a>-->
+            <input type="button" id="findLobbyButton" value="Join Lobby" />
+        </div>
+    </div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/JoinLobby.js"></script>
